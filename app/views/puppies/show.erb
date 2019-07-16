@@ -1,0 +1,13 @@
+<p>Puppy Name:</p>
+<%= @puppies.name %>
+<p>Puppy Breed:</p>
+<%= @puppies.breed %>
+
+<form action='/puppies/<%= @puppies.id %>' method='post'>
+<input type='hidden' name='_method' value='delete'/> 
+    <input type='submit' value='DELETE the PUPPY'/>
+</form>
+
+<a href='/puppies/<%= @puppies.id %>/edit'>
+<button>EDIT the PUPPY</button> 
+</a>
